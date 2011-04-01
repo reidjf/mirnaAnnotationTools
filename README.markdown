@@ -8,7 +8,7 @@ Source code for _generating_ [Bioconductor][] annotation packages:
 
 If you only want to _use_ the resources then please install them from Bioconductor.
 
-More information from my (microRNA research page)[http://reidjf.github.com/research/mirna.html].
+More information from my [microRNA research page](http://reidjf.github.com/research/mirna.html).
 
 
 [microRNAs]: http://en.wikipedia.org/wiki/MicroRNA
