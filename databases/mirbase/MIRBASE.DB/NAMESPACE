@@ -1,0 +1,43 @@
+import(methods)
+import(AnnotationDbi)
+
+### Only put what is statically exported here. All the AnnObj instances
+### created at load time are dynamically exported (refer to R/zzz.R for
+### the details).
+export(
+    @ANNOBJPREFIX@,
+    @ANNOBJPREFIX@_dbconn,
+    @ANNOBJPREFIX@_dbfile,
+    @ANNOBJPREFIX@_dbschema,
+    @ANNOBJPREFIX@_dbInfo
+)
+
+exportClasses("mirbaseContextBimap", "mirnaContext", ## CONTEXT
+              "mirbaseLinksBimap",   "mirnaLinks",   ## LINKS
+              "mirbaseMatureBimap",  "mirnaMature",  ## MATURE
+              "mirbasePmidBimap",    "mirnaPmid"     ## PMID
+              )
+
+exportMethods("contextNumber",                       ## mirnaContext
+              "contextOverlapSense",                 ## mirnaContext
+              "contextOverlapType",                  ## mirnaContext
+              "contextTranscriptID",                 ## mirnaContext
+              "contextTranscriptSource",             ## mirnaContext
+              "contextTranscriptName",               ## mirnaContext
+              "linksDbId",                           ## mirnaLinks
+              "linksDbLink",                         ## mirnaLinks
+              "linksDbSecondary",                    ## mirnaLinks
+              "matureAccession",                     ## mirnaMature
+              "matureEvidence",                      ## mirnaMature
+              "matureExperiment",                    ## mirnaMature
+              "matureFrom",                          ## mirnaMature
+              "matureName",                          ## mirnaMature
+              "matureSimilarity",                    ## mirnaMature
+              "matureTo",                            ## mirnaMature
+              "pmidMedline",                         ## mirnaPmid
+              "pmidAuthor",                          ## mirnaPmid
+              "pmidJournal",                         ## mirnaPmid
+              "pmidTitle",                           ## mirnaPmid
+              "pmidOrderAdded"                       ## mirnaPmid
+              )
+
